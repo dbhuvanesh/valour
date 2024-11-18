@@ -1,5 +1,5 @@
-import React from "react"
-import Home from "./pages/Home.jsx"
+import React from "react";
+import Home from "./pages/Home.jsx";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const container = document.querySelector(".root");
@@ -7,10 +7,7 @@ const root = createRoot(container);
 root.render(
   <Router>
     <Routes>
-      <Route
-        path="/"
-        element={<Home />}
-      />
+      <Route path="/" element={<Home />} />
     </Routes>
-  </Router>
+  </Router>,
 );
