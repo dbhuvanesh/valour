@@ -1,8 +1,8 @@
-import React from "react";
-import Home from "./pages/Home.jsx";
+import * as React from "react";
+import Home from "./pages/Home.tsx";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-const container = document.querySelector(".root");
+const container = document.querySelector(".root")!;
 const root = createRoot(container);
 root.render(
   <Router>
