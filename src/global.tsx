@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./stylesheets/global.css";
 import Home from "./pages/Home.tsx";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,5 +10,5 @@ root.render(
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
-  </Router>,
+  </Router>
 );
